@@ -1,15 +1,24 @@
-#if !defined(__PLANTE__)
 #include <iostream>
-#define __PLANTE__
+#include <string>
+#ifndef PLANTE_H
+#define PLANTE_H
 
 class Plante{
     private:
-        string name;
-        int taille;
-        int sante;
-        int hydratation;
+        std :: string _name;
+        int _taille;
+        int _sante;
+        int _hydratation;
+        int _vie;
     public:
+        Plante(std::string name);
 
-}
+        void manger(int engrais);
+        void tailler(int coupe);
+        void boire(int goutte);
+        void vivre();
+
+        void affiche();
+};
 
 #endif
