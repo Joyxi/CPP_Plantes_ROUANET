@@ -4,6 +4,8 @@
 #ifndef PLANTE_CPP
 #define PLANTE_CPP
 
+using namespace std;
+
 Plante::Plante (std :: string nom): _name(nom), _taille(5), _sante(5), _hydratation(5), _vie (10) {}
 
 void Plante :: manger (int engrais){

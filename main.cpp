@@ -4,6 +4,8 @@
 
 #include "plante.cpp"
 #include "plante.h"
+#include "botaniste.h"
+#include "botaniste.cpp"
 
 using namespace std;
 
@@ -12,6 +14,8 @@ int main(){
 
     Plante * lierre = new Plante("Lierre");
     lierre->affiche();
+
+    Botaniste * michel = new Botaniste("Michel");
 
     return 0;
 };
