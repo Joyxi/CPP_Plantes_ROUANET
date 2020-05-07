@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stream>
+//#include <stream>
 #include "plante.h"
 
 #ifndef BOTANISTE_H
@@ -10,6 +10,7 @@ class Botaniste{
         std::string _name;
         int _argent = 50;
         int _fatigue;
+        int _plantes;
     
     public:
         Botaniste(std::string name);
@@ -17,6 +18,8 @@ class Botaniste{
         void dormir(int heure = 1);
         void acheter();
         void vendre();
+
+        void buy();
 
         void affiche();
     
